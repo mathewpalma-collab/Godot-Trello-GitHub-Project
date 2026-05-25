@@ -1,3 +1,21 @@
 [gd_scene format=3 uid="uid://bl06446v387fy"]
 
-[node name="wassap" type="Node2D" unique_id=1762612241]
+[ext_resource type="Texture2D" uid="uid://ddxmxgyyfy8mn" path="res://icon.svg" id="1_cwchc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mbvcf"]
+size = Vector2(621.5, 121)
+
+[node name="Node2D" type="Node2D" unique_id=309492737]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1986033794]
+position = Vector2(581, 563)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=132946432]
+position = Vector2(1, 0)
+scale = Vector2(4.890625, 1)
+texture = ExtResource("1_cwchc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=164847963]
+position = Vector2(2, -1)
+shape = SubResource("RectangleShape2D_mbvcf")
